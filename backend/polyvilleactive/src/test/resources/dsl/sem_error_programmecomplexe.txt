@@ -1,0 +1,15 @@
+Global
+Prioriser bus 1
+Eviter train
+Fin Global
+Local
+    Quand Bus retard Alors
+        Prioriser Metro 1
+        Eviter Bus
+        Interdire Tramway
+        
+    Quand Train avance alors
+        Interdire train
+        Eviter train
+        Prioriser tramway 1
+Fin Local

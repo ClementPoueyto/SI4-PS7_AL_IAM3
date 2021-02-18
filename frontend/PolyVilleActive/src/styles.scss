@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+ 
+ #editor {
+    width: 80%;
+    height: 400px;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    font-size: 14px;
+    font-family: monospace;
+    outline:none;
+}
+.statement {
+    color: orange;
+}
+
+.alea {
+    color: violet;
+}
+
+.transport {
+    color: green;
+}
+
+body {
+  background: 
+  linear-gradient(135deg, #252525 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, #252525 25%, transparent 25%) -49px 0,
+  linear-gradient(315deg, #252525 25%, transparent 100%),
+  linear-gradient(45deg, #252525 25%, transparent 25%);   
+  background-size: 5em 5em;
+  background-color: #444444;
+  white-space: nowrap;
+}
+
+div {
+  white-space: normal;
+}

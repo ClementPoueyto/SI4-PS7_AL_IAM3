@@ -1,0 +1,36 @@
+{
+  "name": "connected-objects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serve.js",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "chai": "^4.2.0",
+    "child_process": "^1.0.2",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "supertest": "^6.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  },
+  "scripts": {
+    "test": "mocha --exit",
+    "traffic-example": "concurrently \"node server.js\" \"node ./infra-red-light-route.js\"",
+    "passage-example": "concurrently \"node server.js\" \"node ./passage-bus-sensor-bus.js\"",
+    "visits-example": "concurrently \"node server.js\" \"node ./visits-bus-sensor.js\" \"node ./phones.js\"",
+    "rain-example": "concurrently \"node server.js -weather\" \"node ./local-weather-measure.js Rain\"",
+    "snow-example": "concurrently \"node server.js -weather\" \"node ./local-weather-measure.js Snow\"",
+    "sunny-example": "concurrently \"node server.js -weather\" \"node ./local-weather-measure.js Sunny\"",
+    "breakdown-example": "concurrently \"node server.js -breakdown\" \"node ./transport-service.js\"",
+    "snow-breakdown-example": "concurrently \"node server.js -breakdown -weather\" \"node ./transport-service.js\" \"node ./local-weather-measure.js Snow\"",
+    "rain": "node ./local-weather-measure.js Rain",
+    "snow": "node ./local-weather-measure.js Snow",
+    "sunny": "node ./local-weather-measure.js Sunny",
+    "breakdonw": "node ./transport-service.js",
+    "serve": "node server.js -breakdown -weather"
+  },
+  "author": "ps7-al-iam3",
+  "license": "ISC"
+}

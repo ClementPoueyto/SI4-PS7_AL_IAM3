@@ -1,0 +1,17 @@
+<button class="button" (click)="changeColor()">Changer fond</button>
+<div class= "pos">
+	<doc-configuration class="doc"></doc-configuration>
+	<div class="visual">
+		<div class="box">
+		  <div id="editor" class="input" (keyup)="colorText()" contenteditable="true" [ngStyle]="{'background-color':'#'+backgroundcolor, 'color': text}"></div>
+		</div>
+		<div class="center">
+		<button class="button" (click)="sendProgram(true)">Vérifier le programme</button>
+		  <button class="button" (click)="sendProgram(false)">Confirmer</button>
+		</div>
+		<div class="info">
+		  <p>Erreur:</p>
+		  <p id="erreur">{{erreur.program}}</p>
+		</div>
+	</div>
+</div>

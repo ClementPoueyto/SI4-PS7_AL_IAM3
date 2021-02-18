@@ -1,0 +1,23 @@
+.docbox {
+    font-family: Consolas, monospace;
+    background-color: gray;
+    height:100%;
+    margin-right: 2%;
+    border-radius: 4px;
+}
+
+.titre{
+    margin-top:10%;
+    font-style: oblique;
+}
+
+.line{
+  content:'';
+  display:inline-block;
+  width:100%;
+  margin-right:-100%;
+  border-bottom:1px solid #000;
+}
+ul {
+    list-style-type: none;
+}

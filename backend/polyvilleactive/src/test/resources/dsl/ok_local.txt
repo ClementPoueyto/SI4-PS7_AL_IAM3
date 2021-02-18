@@ -1,0 +1,8 @@
+Global
+Fin Global
+Local
+    Quand Bus retard Alors
+        Prioriser Metro 1
+        Eviter Bus
+        Interdire Tramway
+Fin Local
